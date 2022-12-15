@@ -1,10 +1,10 @@
 # Title (replace with your title)
 
-Introductory paragraph (replace this with your text)
+In this tutorial I want to explain how to use regex to match users emails us the expression `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`. This is used when the validation of users emails for applications or different technologies is needed.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+A regular expression, or regex for short, is a sequence of characters that specifies a search pattern in text. When using regex for email validation, it makes it possible to check to see if an email address is correctly spelled, has no commas, or spaces, and that all the @s, domain extensions and dots are in the correct place. This tutorial is going to walk through what regex consists of and how it is used to match an email.
 
 ## Table of Contents
 
@@ -22,9 +22,16 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ## Regex Components
 
-### Anchors
+### Anchor
+
+There are two anchors that are currently used, the `^` character and the `$` character. The `^` character is the first anchor used and it means that a match must occur at the beginning of your string. It means that be beginning of our verified email must abide by the parameters that are set in the brackets `[]`. For example the beginning of our email must match `[a-z0-9_\.-]+)`.
+
+Our second anchor that is used is the `$`. This is servers the same purpose as our `^` character but its used for the end of the email. This is stating that the end of our email must match the parameter that are set in the brackets of our last Character Group `[a-z\.]{2,6})$/`.
+
 
 ### Quantifiers
+
+
 
 ### OR Operator
 
