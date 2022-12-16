@@ -31,19 +31,29 @@ Our second anchor that is used is the `$`. This is servers the same purpose as o
 
 ### Quantifiers
 
-
+A Quantifier is a parameter that specifies how many instance of an element must be used in the email to have a successful match. The operator that is used to join the email name, email service and the `.com` is the `+` operator. The `{2,6}` quantifier is used to allow a match range of 2-6 characters when using the character set `[a-z\.]`.
 
 ### OR Operator
 
 ### Character Classes
 
+The character class that is used in this expression is `\d` shown above. This matches a single character that is a digit from 0-9. Only single digits will match, for example "4" will match but "44" will not.
+
 ### Flags
+
+This regex doesn't use Flags! Flags are normally used after the second `/` of our expression but we don't use them here.
 
 ### Grouping and Capturing
 
+Group #1 in the expression above is `([a-z0-9_\.-]+)` which matches the name of the users email. The second group is `([\da-z\.-]+)`. This group matches the email service. The final group is `([a-z\.]{2,6})`, this group captures the `.com`.
+
 ### Bracket Expressions
 
+This is the character set for bracket expressions, `[a-z0-9_\.-]`. Bracket expressions match any letter a-z and is case sensitive, it also matches a character 0-9 and the "_", "-", and ".". `[\da-z\.-]` matches a single digit from 0-9, a character from a-z, which is case sensitive, and the characters "." and "-". The final bracket expression is `[a-z\.]`, this matches any character a-z, also case sensitive, and the character ".".
+
 ### Greedy and Lazy Match
+
+This regex that we are looking at does utilize something called greedy matches. Since the `+` quantifier is included, it will match as many times as possible giving back as needed. An additional quantifier is `{}`, this is used when matching `{2,6}` for the last capture group. 
 
 ### Boundaries
 
