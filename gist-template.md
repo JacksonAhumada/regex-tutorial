@@ -10,15 +10,12 @@ A regular expression, or regex for short, is a sequence of characters that speci
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
 - [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+
 
 ## Regex Components
 
@@ -32,8 +29,6 @@ Our second anchor that is used is the `$`. This is servers the same purpose as o
 ### Quantifiers
 
 A Quantifier is a parameter that specifies how many instance of an element must be used in the email to have a successful match. The operator that is used to join the email name, email service and the `.com` is the `+` operator. The `{2,6}` quantifier is used to allow a match range of 2-6 characters when using the character set `[a-z\.]`.
-
-### OR Operator
 
 ### Character Classes
 
@@ -55,12 +50,6 @@ This is the character set for bracket expressions, `[a-z0-9_\.-]`. Bracket expre
 
 This regex that we are looking at does utilize something called greedy matches. Since the `+` quantifier is included, it will match as many times as possible giving back as needed. An additional quantifier is `{}`, this is used when matching `{2,6}` for the last capture group. 
 
-### Boundaries
-
-### Back-references
-
-### Look-ahead and Look-behind
-
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Hi there!! Thank you for making it through my tutorial! Hopefully you found it helpful and informative. I'm Jackson Ahumada and am currently enrolled in the DU full stack coding bootcamp, gaining the skills needed to be a JavaScript developer. If you are interested in checking out my work please visit my GitHub!![My GitHub](https://github.com/JacksonAhumada) Thank you so much!! 
